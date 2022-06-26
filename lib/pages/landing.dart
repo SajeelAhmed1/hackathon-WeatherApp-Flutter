@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/btn.dart';
 import 'package:weather_app/btn_blue.dart';
+import 'package:weather_app/pages/city-selection.dart';
 
 class landing extends StatelessWidget {
   const landing({Key? key}) : super(key: key);
@@ -30,10 +31,16 @@ class landing extends StatelessWidget {
             child: AppButton(
                 label: "Select Current Location", onPress: onSignPress),
           ),
-          Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: AppButtonblu(label: "Select City", onPress: onSignPress),
-          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (_) => citySel()));
+            },
+            child: Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: AppButtonblu(label: "Select City", onPress: onSignPress),
+            ),
+          )
         ],
       ),
     );
