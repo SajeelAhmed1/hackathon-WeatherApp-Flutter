@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/pages/landing.dart';
+import 'package:weather_app/pages/city-selection.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
     // MaterialApp app=MaterialApp()
     // return app()
     return const MaterialApp(
-      home: landing(),
+      home: citySel(),
       // home: homepage(),
       // home: leaderBoard(),
       debugShowCheckedModeBanner: false,
