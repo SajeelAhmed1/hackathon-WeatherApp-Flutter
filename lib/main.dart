@@ -1,6 +1,5 @@
-
 import 'package:flutter/material.dart';
-import 'package:weather_app/pages/splash.dart';
+import 'package:weather_app/pages/landing.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,7 +11,7 @@ class MyApp extends StatelessWidget {
     // MaterialApp app=MaterialApp()
     // return app()
     return const MaterialApp(
-      home: splash(),
+      home: landing(),
       // home: homepage(),
       // home: leaderBoard(),
       debugShowCheckedModeBanner: false,
