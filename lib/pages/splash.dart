@@ -21,7 +21,7 @@ class splash extends StatelessWidget {
                   children: const [
                     Text("K A T I   Z E R O",
                         style: TextStyle(
-                            color: Colors.white,
+                            color: Color.fromARGB(255, 216, 33, 33),
                             fontSize: 35,
                             fontWeight: FontWeight.w400))
                   ],
